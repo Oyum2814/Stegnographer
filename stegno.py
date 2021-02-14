@@ -13,7 +13,7 @@ root =Tk()
 root.title('GAMEOPHILE PRODUCTIONS')
 root.geometry('900x500')
 root.config(bg="black")
-
+size = 1920,1080
 dir1=""
 dir2=""
 
@@ -206,6 +206,7 @@ def encode_start():
     encoded_image_path = "./encoded.tiff"
     image_to_hide = PIL.Image.open(mode='r', fp=image_to_hide_path)
     image_to_hide_in = PIL.Image.open(mode='r', fp=image_to_hide_in_path)
+
 
 
     encode(image_to_hide, image_to_hide_in, n_bits).save(encoded_image_path)
